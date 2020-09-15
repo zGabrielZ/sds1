@@ -31,7 +31,7 @@ public class RecordService {
 		return records.stream().map(x-> new RecordDTO(x)).collect(Collectors.toList());
 	}
 	
-	@Transactional(readOnly = true)
+	@Transactional
 	public RecordDTO insert(RecordInsertDTO recordInsertDTO) {
 		Record record = new Record();
 		record.setName(recordInsertDTO.getName());
