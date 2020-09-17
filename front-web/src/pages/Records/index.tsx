@@ -4,7 +4,7 @@ import axios from 'axios'
 import { RecordsResponse } from './types'
 import { formData } from './helpers'
 import Pagination from './pagination/index'
-import {Link} from 'react-router-dom'
+import Filters from '../../components/Filters'
 
 const BASE_URL = 'http://localhost:8080'
 
@@ -26,13 +26,7 @@ const Records = () => {
     return (
         (
             <div className="page-container">
-                <div className="filters-container records-actions">
-                    <Link to="/charts">
-                        <button className="action-filters">
-                            Ver gráficos
-                        </button>
-                    </Link>
-                </div>
+                <Filters link="/charts" linkText="Ver Gráficos" ></Filters>
                 <table className="records-table" cellPadding="0" cellSpacing="0">
                     <thead>
                         <tr>
