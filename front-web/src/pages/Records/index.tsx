@@ -6,7 +6,7 @@ import { formData } from './helpers'
 import Pagination from './pagination/index'
 import Filters from '../../components/Filters'
 
-const BASE_URL = 'http://localhost:8080'
+const BASE_URL = 'https://sds1-spring-boot.herokuapp.com'
 
 const Records = () => {
     
